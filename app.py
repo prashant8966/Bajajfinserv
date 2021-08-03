@@ -20,7 +20,7 @@ app=Flask(__name__)
 def main():
   a={
       "is_success": True,
-      "user_id": "john_doe_17091999",
+      "user_id": "john_doe_17091999", 
       "odd": [1,3,5,7,9],
       "even": [0,2,4,6,8]
   }
@@ -29,9 +29,9 @@ def main():
 def new():
   data=request.get_json()
   if data==None:
-    return("Data Not found")
+    return("NO data found")
   number=data["numbers"]
-
+  
   odd=[]
   even=[]
   final={}
@@ -59,3 +59,4 @@ def new():
 
 if __name__=="__main__":
     app.run()
+
